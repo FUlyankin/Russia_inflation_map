@@ -1,0 +1,13 @@
+name: russia_price_map
+title: russia_price_map
+username:
+account: russiamotherland1
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 578395
+bundleId: 1707107
+url: https://russiamotherland1.shinyapps.io/russia_price_map/
+when: 1542546129.58285
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: alldata.csv|data/logo.jpg|data/Prod_price_03_16_m.csv

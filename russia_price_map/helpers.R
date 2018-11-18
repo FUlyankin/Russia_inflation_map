@@ -4,10 +4,10 @@
 percent_map <- function(var1,var2,russia_df,alldata,subj_id){
 
   # Выделяем какой-нибудь один продукт 
-  curent_data <- alldata[alldata$X.3 == var1,][-1,]
+  curent_data <- alldata[alldata$"Unnamed..3" == var1,][-1,]
   stat <- data.frame( )
   I_want_some_data <- paste0('curent_data$','"',var2,'"')
-  stat <- data.frame('NAME' = as.vector(curent_data$X.1),'TEST_DATA'= eval(parse(text = I_want_some_data)))
+  stat <- data.frame('NAME' = as.vector(curent_data$Unnamed..1),'TEST_DATA'= eval(parse(text = I_want_some_data)))
   
   map.data <- merge(stat,subj_id,by='NAME')
   

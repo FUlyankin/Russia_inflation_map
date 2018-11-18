@@ -1,8 +1,8 @@
 # Эта часть скрипта контролирует вывод и вход
 
 library('shiny')
-alldata <- read.csv('data/Prod_price_03_16_m.csv',sep=',',header=TRUE)
-products <- as.character(unique(alldata$X.3)[-1])
+alldata <- read.csv('data/Prod_price_03_17_m.csv',sep=',',header=TRUE)
+products <- as.character(unique(alldata$"Unnamed..3")[-1])
 
 shinyUI(fluidPage(
   titlePanel("Ценовая карта России"),
@@ -14,14 +14,14 @@ shinyUI(fluidPage(
       selectInput("var1", 
                   label = "Выберите товар",
                   choices = products,
-                  selected = "Картофель, кг"
+                  selected = "Водка крепостью 40% об.спирта и выше,л"
       ),
       
       selectInput("var_year", 
                   label = "Выберите год",
                   choices = c('2003','2004','2005','2006','2007','2008','2009','2010',
-                              '2011','2012','2013','2014','2015','2016'),
-                  selected = "2016"),
+                              '2011','2012','2013','2014','2015','2016','2017','2018'),
+                  selected = "2018"),
       
       selectInput("var_mouth", 
                   label = "Выберите месяц",
